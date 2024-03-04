@@ -1,0 +1,423 @@
+body,
+html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+/* CSS for desktop screens */
+@media (min-width: 1024px) {
+
+    /* Home Section */
+    .bg {
+        /* The image used */
+        background-image: url("images/bg.jpg");
+        /* Full height */
+        height: 50%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* Bottom right text */
+    .text-block {
+        font-style: italic;
+        position: absolute;
+        top: 100px;
+        left: 170px;
+        color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Nav Section */
+    #mySidenav a {
+        position: absolute;
+        /* Position them relative to the browser window */
+        left: -80px;
+        /* Position them outside of the screen */
+        transition: 0.3s;
+        /* Add transition on hover */
+        padding: 15px;
+        /* 15px padding */
+        width: 150px;
+        /* Set a specific width */
+        text-decoration: none;
+        /* Remove underline */
+        font-size: 20px;
+        /* Increase font size */
+        color: white;
+        /* White text color */
+        border-radius: 0 5px 5px 0;
+        /* Rounded corners on the top right and bottom right side */
+    }
+
+    #mySidenav a:hover {
+        left: 0;
+        /* On mouse-over, make the elements appear as they should */
+    }
+
+    #home {
+        top: 20px;
+        background-color: #f49e36;
+        /* orange */
+    }
+
+    #about {
+        top: 80px;
+        background-color: #04AA6D;
+        /* green */
+    }
+
+    #gallery {
+        top: 140px;
+        background-color: #2196F3;
+        /* Blue */
+    }
+
+    #services {
+        top: 200px;
+        background-color: #f44336;
+        /* Red */
+    }
+
+    #contact {
+        top: 260px;
+        background-color: #555
+            /* Light Black */
+    }
+
+    /* About Section */
+    #about1 {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+    }
+
+    .about {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 60%;
+    }
+
+    .about-text p {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    /* Gallery Section */
+    .column {
+        margin-left: 150px;
+        float: left;
+        width: 15%;
+        padding: 10px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+        transition: transform 0.3s ease;
+        opacity: 0.8;
+        height: 400px;
+        width: 350px;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    /* Clear floats after the columns */
+    .gallery:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .full-screen {
+        display: flex;
+        justify-content: center;
+        /* Horizontally center the content */
+        align-items: center;
+        /* Vertically center the content */
+        height: 300px;
+        /* Adjust the height as needed */
+    }
+
+    .full-screen img {
+        max-width: 200%;
+        max-height: 100%;
+    }
+
+    /* Service Section */
+    #services1 {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+    }
+
+
+    .service {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .service img {
+        max-width: 500px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .service h3 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .service p {
+        color: #666;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    /* Contact Section */
+    #contact1 {
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        /* Horizontally center the content */
+        align-items: center;
+        /* Vertically center the content */
+        height: 300px;
+        /* Adjust the height as needed */
+    }
+
+    section {
+        padding: 20px, 0;
+    }
+
+}
+
+/* CSS for mobile screens */
+@media (max-width: 767px) {
+
+    /* Home Section */
+    .bg {
+        /* The image used */
+        background-image: url("images/bg.jpg");
+        height: 60%;
+        width: 150%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* Bottom right text */
+    .text-block {
+        font-style: italic;
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Nav Section */
+    #mySidenav a {
+        position: absolute;
+        /* Position them relative to the browser window */
+        left: -80px;
+        /* Position them outside of the screen */
+        transition: 0.3s;
+        /* Add transition on hover */
+        padding: 15px;
+        /* 15px padding */
+        width: 150px;
+        /* Set a specific width */
+        text-decoration: none;
+        /* Remove underline */
+        font-size: 20px;
+        /* Increase font size */
+        color: white;
+        /* White text color */
+        border-radius: 0 5px 5px 0;
+        /* Rounded corners on the top right and bottom right side */
+    }
+
+    #mySidenav a:hover {
+        left: 0;
+        /* On mouse-over, make the elements appear as they should */
+    }
+
+    #home {
+        top: 20px;
+        background-color: #f49e36;
+        /* orange */
+    }
+
+    #about {
+        top: 80px;
+        background-color: #04AA6D;
+        /* green */
+    }
+
+    #gallery {
+        top: 140px;
+        background-color: #2196F3;
+        /* Blue */
+    }
+
+    #services {
+        top: 200px;
+        background-color: #f44336;
+        /* Red */
+    }
+
+    #contact {
+        top: 260px;
+        background-color: #555
+            /* Light Black */
+    }
+
+    /* About Section */
+    #about1 {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+    }
+
+    .about {
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 500px;
+    }
+
+    .about-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about-text {
+        width: 200%;
+    }
+
+    .about-text p {
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    /* Gallery Section */
+    .column {
+        margin-left: 100px;
+        float: left;
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+        transition: transform 0.3s ease;
+        opacity: 0.8;
+        height: 400px;
+        width: 350px;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    /* Clear floats after the columns */
+    .gallery:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .full-screen {
+        display: flex;
+        justify-content: center;
+        /* Horizontally center the content */
+        align-items: center;
+        /* Vertically center the content */
+        height: 300px;
+        /* Adjust the height as needed */
+    }
+
+    .full-screen img {
+        margin-left: 50%;
+        max-width: 200%;
+        max-height: 100%;
+    }
+
+    /* Service Section */
+    #services1 {
+        margin-left: 20%;
+        padding: 50px 0;
+        background-color: #f9f9f9;
+
+    }
+
+    .service {
+
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .service img {
+        margin-left: 5%;
+        max-width: 500px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .service h3 {
+        margin-bottom: 10px;
+        font-size: 24px;
+        color: #333;
+    }
+
+    .service p {
+        color: #666;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    /* Contact Section */
+    #contact1 {
+        background-color: grey;
+        display: flex;
+        justify-content: center;
+        /* Horizontally center the content */
+        align-items: center;
+        /* Vertically center the content */
+        height: 300px;
+        /* Adjust the height as needed */
+        width: 600px;
+    }
+
+    section {
+        padding: 20px, 0;
+    }
+
+}
